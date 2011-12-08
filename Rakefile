@@ -17,37 +17,21 @@ Jeweler::Tasks.new do |gem|
   gem.name = "locale_gen"
   gem.homepage = "http://github.com/aproxacs/locale_gen"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Generates locale files from google spreadsheet document.}
+  gem.description = %Q{}
   gem.email = "aproxacs.gmail.com"
   gem.authors = ["aproxacs"]
+  gem.executables = ["locale_gen"]
+  gem.files = [
+    "Rakefile",
+    "README.rdoc",
+    "VERSION",
+    "bin/locale_gen",
+    "config/config.exmample.yml",
+    "lib/locale_gen.rb",
+    "lib/locale_gen/**/*.rb"
+  ]
   # dependencies defined in Gemfile
 end
 Jeweler::RubygemsDotOrgTasks.new
 
-require 'rake/testtask'
-Rake::TestTask.new(:test) do |test|
-  test.libs << 'lib' << 'test'
-  test.pattern = 'test/**/test_*.rb'
-  test.verbose = true
-end
-
-require 'rcov/rcovtask'
-Rcov::RcovTask.new do |test|
-  test.libs << 'test'
-  test.pattern = 'test/**/test_*.rb'
-  test.verbose = true
-  test.rcov_opts << '--exclude "gems/*"'
-end
-
-task :default => :test
-
-require 'rake/rdoctask'
-Rake::RDocTask.new do |rdoc|
-  version = File.exist?('VERSION') ? File.read('VERSION') : ""
-
-  rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = "locale_gen #{version}"
-  rdoc.rdoc_files.include('README*')
-  rdoc.rdoc_files.include('lib/**/*.rb')
-end

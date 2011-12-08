@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns:gd="http://schemas.google.com/g/2005" xmlns:gsx="http://schemas.google.com/spreadsheets/2006/extended" xmlns:openSearch="http://a9.com/-/spec/opensearch/1.1/" xmlns="http://www.w3.org/2005/Atom" gd:etag="abc">
+
+  <entry gd:etag="def">
+    <gsx:codename>ui_level</gsx:codename>
+    <gsx:envalue>LEVEL</gsx:en>
+    <gsx:tooltip>ui_level.tooltip</gsx:codename>
+    <gsx:tooltipenvalue>level tooltip</gsx:en>
+  </entry>
+  <entry gd:etag="def">
+    <gsx:codename>ui_collection_atoms</gsx:codename>
+    <gsx:envalue>ENERGY : #{1}</gsx:en>
+    <gsx:tooltip>ui_collection_atoms.tooltip</gsx:codename>
+    <gsx:tooltipenvalue>tooltip</gsx:en>
+  </entry>
+  <entry gd:etag="def">
+    <gsx:codename>mouseover_energy</gsx:codename>
+    <gsx:envalue>ENERGY (#{1}/#{2})  : Consumed at every action. building, collecting, etc.</gsx:en>
+    <gsx:tooltip>mouseover_energy.tooltip</gsx:codename>
+    <gsx:tooltipenvalue>tooltip</gsx:en>
+  </entry>
+
+</feed>

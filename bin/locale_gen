@@ -1,0 +1,25 @@
+#!/usr/bin/env ruby
+
+require 'optparse'
+require 'rubygems'
+require 'locale_gen'
+
+cfile = ""
+opts = OptionParser.new do |opts|
+  opts.banner = "make locale files from goole spreadsheet"
+  opts.define_head "Usage: locale_gen -C config_filename"
+
+  opts.on("-C", "--config CONFIG_FILE", "config filename") do |filename|
+    cfile = File.expand_path(filename)
+  end
+end
+opts.parse!
+
+unless File.exist?(cfile)
+  puts "#{cfile} does not exist. please input valid filename"
+  exit
+end
+
+con = LocaleGen.configure(cfile)
+
+LocaleGen.generate

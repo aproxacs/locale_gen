@@ -1,0 +1,29 @@
+key: "spreadsheet key"
+email: "google email address"
+password: "password"
+
+goals:
+  - output:
+      format: "txt"
+      filename: "~/en.txt"
+
+    tabs:
+      View:
+        codename: "en"
+      Tab:
+        codename: "en"
+      Button:
+        codename: "en"
+      Hero:
+        codename: "en"
+        tooltip: "desc"
+
+  - output:
+      format: "txt"
+      filename: "~/kr.txt"
+
+    tabs:
+      View:
+        codename: "fb_kr"
+      Tab:
+        codename: "kr"
